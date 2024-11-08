@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            position: relative;
+            z-index: 10;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+        .flower {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: radial-gradient(circle at center, #00FFFF, #0000FF);
+            border-radius: 50%;
+            opacity: 0.9;
+            animation: bloom 4s infinite ease-in-out;
+        }
+        @keyframes bloom {
+            0% {
+                transform: scale(0.5) translateY(0);
+                opacity: 0;
+            }
+            30% {
+
